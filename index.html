@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JetBridge — доставка из ОАЭ в Казахстан за 5–7 дней</title>
+  <meta name="description" content="JetBridge — авиа-доставка из ОАЭ в Казахстан «под ключ»: склад в Дубае, трекинг, таможенное оформление и доставка получателю.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- ===== Шапка + выпадающее меню ===== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="#hero" aria-label="JetBridge — на главную">
+        <img class="logo__img" src="img/logo.png" alt="JetBridge">
+      </a>
+
+      <div class="site-header__controls">
+        <div class="lang" role="group" aria-label="Язык сайта">
+          <a class="lang__item lang__item--active" href="#" lang="ru" aria-current="true">RU</a>
+          <span aria-hidden="true">/</span>
+          <a class="lang__item" href="#" lang="kk">kz</a>
+        </div>
+
+        <button class="btn btn--gradient btn--menu js-menu-toggle" type="button"
+                aria-expanded="false" aria-controls="site-nav">
+          <span class="js-menu-label" data-label-open="Меню" data-label-close="Закрыть">Меню</span>
+          <img class="js-menu-icon" src="img/icons/sort.svg" alt="" width="24" height="24"
+               data-icon-open="img/icons/sort.svg" data-icon-close="img/icons/close.svg">
+        </button>
+      </div>
+
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация" hidden>
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#about">О компании</a></li>
+          <li><a class="site-nav__link" href="#stages">Этапы</a></li>
+          <li><a class="site-nav__link" href="#advantages">Приемущества</a></li>
+          <li><a class="site-nav__link" href="#tariffs">B2B-направления</a></li>
+          <li><a class="site-nav__link" href="#tariffs">Тарифы</a></li>
+          <li><a class="site-nav__link" href="#delivery">Что доставляем</a></li>
+          <li><a class="site-nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__photo" aria-hidden="true">
+        <img src="img/hero-bg.png" alt="">
+      </div>
+      <div class="hero__tint" aria-hidden="true"></div>
+      <div class="hero__fade" aria-hidden="true"></div>
+      <img class="hero__glow" src="img/hero-ellipse.svg" alt="" aria-hidden="true">
+
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__brand">Jet <span class="hero__brand-word">Bridge</span></span>
+            <span class="hero__headline">- ДОСТАВКА ИЗ ОАЭ<br>В КАЗАХСТАН ЗА 5-7 ДНЕЙ</span>
+          </h1>
+          <p class="hero__lead">
+            Посылки, техника, запчасти и грузы для бизнеса.<br>
+            Всё под ключ: склад, трекинг, таможня.
+          </p>
+        </div>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="#request">Рассчитать стоимость</a>
+          <a class="btn btn--gradient btn--lg btn--outlined" href="#tariffs">
+            <span>Ознакомиться с тарифом</span>
+            <img src="img/plane.png" alt="" width="34" height="31">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== О компании ===== -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container about__inner">
+        <div class="about__content">
+          <div class="about__text">
+            <h2 class="section-title" id="about-title">О компании JetBridge</h2>
+            <p>JetBridge — это международная логистическая компания, предоставляющая авиа-доставку из ОАЭ в Казахстан “под ключ”. Мы обеспечиваем полный цикл: от приёмки и консолидации груза на собственном складе в Дубае до оформления всех документов и доставки получателю в РК. Работаем как с частными клиентами, так и с бизнесом: оформляем контракты, инвойсы, HS-коды и сопровождаем ВЭД.</p>
+            <p>Наш подход — это скорость, прозрачность и технологичность. Благодаря цифровым инструментам клиент всегда знает, где находится его груз, сколько он стоит и когда будет доставлен.</p>
+          </div>
+          <a class="btn btn--primary btn--md" href="#request">Рассчитать стоимость</a>
+        </div>
+        <img class="about__photo" src="img/about.png" alt="Грузовой самолёт JetBridge на аэродроме">
+      </div>
+    </section>
+
+    <!-- ===== Преимущества ===== -->
+    <section class="advantages" id="advantages" aria-labelledby="advantages-title">
+      <div class="container advantages__inner">
+        <div class="advantages__watermark" aria-hidden="true"></div>
+        <img class="advantages__photo advantages__photo--1" src="img/adv-1.png" alt="">
+        <img class="advantages__photo advantages__photo--2" src="img/adv-2.png" alt="">
+
+        <h2 class="section-title advantages__title" id="advantages-title">Наши ключевые преимущества — в каждом этапе логистики</h2>
+
+        <ul class="advantages__list">
+          <li class="advantage advantage--fast">
+            <h3 class="advantage__title">Быстрая доставка за 5–7 дней</h3>
+            <p class="advantage__text">Авиа-отправка из ОАЭ без задержек и перегрузок! Вы точно знаете когда получите ваш груз</p>
+          </li>
+          <li class="advantage advantage--digital">
+            <h3 class="advantage__title">Цифровой сервис без звонков и ожиданий</h3>
+            <p class="advantage__text">Заявка, трекинг, уведомления — всё онлайн, в личном кабинете</p>
+          </li>
+          <li class="advantage advantage--tariffs">
+            <h3 class="advantage__title">Гибкие тарифы для B2C и B2B</h3>
+            <p class="advantage__text">Лояльный подход<br>к каждому клиенту!</p>
+          </li>
+          <li class="advantage advantage--warehouse">
+            <h3 class="advantage__title">Собственный склад в Дубае</h3>
+            <p class="advantage__text">Принимаем, проверяем, фотографируем, упаковываем и объединяем грузы.</p>
+          </li>
+          <li class="advantage advantage--customs">
+            <h3 class="advantage__title">Полное таможенное оформление и ВЭД</h3>
+            <p class="advantage__text">Берём на себя документы, инвойсы, страхование</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Тарифы ===== -->
+    <section class="tariffs" id="tariffs" aria-labelledby="tariffs-title">
+      <img class="tariffs__cloud tariffs__cloud--left-big" src="img/cloud-l-big.png" alt="" aria-hidden="true">
+      <img class="tariffs__cloud tariffs__cloud--right-big" src="img/cloud-r-big.png" alt="" aria-hidden="true">
+
+      <div class="container tariffs__inner">
+        <h2 class="section-title" id="tariffs-title">Технологии, которые работают на вас</h2>
+
+        <ul class="tariffs__list">
+          <li class="tariff tariff--orange">
+            <h3 class="tariff__title">Мини<br>посылка</h3>
+            <div class="tariff__body">
+              <p>Для личных заказов, запчастей, косметики, документов и др.</p>
+              <ul class="tariff__features tariff__features--list">
+                <li>Все включено. склад, трекинг, таможня</li>
+                <li>Удобно для маркетплейсов</li>
+                <li>Вес: до 10 кг</li>
+              </ul>
+              <p>Цена: от $8 за отправление<br>Срок: 5-7 дней</p>
+            </div>
+            <img class="tariff__icon" src="img/icons/tariff-mail.svg" alt="" width="116" height="116">
+            <a class="btn btn--light" href="#request">Оставить заявку</a>
+          </li>
+
+          <li class="tariff tariff--blue">
+            <h3 class="tariff__title">Стандартная доставка</h3>
+            <div class="tariff__body">
+              <p>Для личных и бизнес заказов, техники, косметики, документов, запчастей и др.</p>
+              <ul class="tariff__features">
+                <li>Все включено. склад, трекинг, таможня</li>
+                <li>Удобно для маркетплейсов</li>
+                <li>Вес: до 50 кг</li>
+              </ul>
+              <p>Цена: от $8 за отправление<br>Срок: 5-7 дней</p>
+            </div>
+            <img class="tariff__icon" src="img/icons/tariff-package.svg" alt="" width="116" height="116">
+            <a class="btn btn--light" href="#request">Оставить заявку</a>
+          </li>
+
+          <li class="tariff tariff--orange">
+            <h3 class="tariff__title">Крупный груз/ партия</h3>
+            <div class="tariff__body">
+              <p>Для личных и бизнес заказов, техники, косметики, документов, запчастей и др.</p>
+              <ul class="tariff__features">
+                <li>Все включено. склад, трекинг, таможня</li>
+                <li>Удобно для маркетплейсов</li>
+                <li>Вес: от 100 г</li>
+              </ul>
+              <p>Цена: от $8 за отправление<br>Срок: 5-7 дней</p>
+            </div>
+            <img class="tariff__icon" src="img/icons/tariff-cargo.svg" alt="" width="116" height="116">
+            <a class="btn btn--light" href="#request">Оставить заявку</a>
+          </li>
+        </ul>
+      </div>
+
+      <img class="tariffs__cloud tariffs__cloud--left-small" src="img/cloud-l-small.png" alt="" aria-hidden="true">
+      <img class="tariffs__cloud tariffs__cloud--right-small" src="img/cloud-r-small.png" alt="" aria-hidden="true">
+    </section>
+
+    <!-- ===== Этапы ===== -->
+    <section class="stages" id="stages" aria-labelledby="stages-title">
+      <img class="stages__bg" src="img/stages-bg.png" alt="" aria-hidden="true">
+
+      <div class="container stages__inner">
+        <div class="stages__intro">
+          <div class="stages__lead">
+            <h2 class="section-title" id="stages-title">Как работает JetBridge</h2>
+            <p>От заявки до получения — весь процесс под контролем. Мы берём на себя всю логистику, склад, документы и доставку. Вам нужно только отправить груз — остальное сделаем мы.</p>
+            <a class="btn btn--gradient btn--cta" href="#contacts">
+              <span>Связаться с нами</span>
+              <span class="btn__arrow"><img src="img/icons/arrow-right.svg" alt="" width="36" height="36"></span>
+            </a>
+          </div>
+
+          <ol class="stages__list stages__list--first">
+            <li class="stage">
+              <div class="stage__head">
+                <h3 class="stage__title">Заявка онлайн</h3>
+                <span class="stage__icon"><img src="img/icons/step-online.svg" alt="" width="30" height="30"></span>
+              </div>
+              <p class="stage__text">Вы заполняете форму или пишете в ватсап — быстро и без звонков</p>
+            </li>
+          </ol>
+        </div>
+
+        <ol class="stages__list stages__list--rest" start="2">
+          <li class="stage">
+            <div class="stage__head">
+              <h3 class="stage__title">Приёмка<br>в Дубае</h3>
+              <span class="stage__icon"><img src="img/icons/step-warehouse.svg" alt="" width="30" height="30"></span>
+            </div>
+            <p class="stage__text">Груз поступает на наш склад, проверяется, фотографируется и готовится к отправке</p>
+          </li>
+          <li class="stage">
+            <div class="stage__head">
+              <h3 class="stage__title">Отправка АВИА Доставкой</h3>
+              <span class="stage__icon"><img src="img/icons/step-plane.svg" alt="" width="30" height="30"></span>
+            </div>
+            <p class="stage__text">Мы отправляем ваш груз ближайшим рейсом в РК. Включено: трекинг и экспортное оформление</p>
+          </li>
+          <li class="stage stage--last">
+            <div class="stage__head">
+              <h3 class="stage__title">Доставка<br>и получение</h3>
+              <span class="stage__icon"><img src="img/icons/step-delivery.svg" alt="" width="30" height="30"></span>
+            </div>
+            <p class="stage__text">Оформляем таможню, сообщаем статус и передаём груз получателю в Алмате. Возможна доставка по всей территории Казахстана.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Что мы доставляем ===== -->
+    <section class="delivery" id="delivery" aria-labelledby="delivery-title">
+      <div class="container">
+        <h2 class="section-title" id="delivery-title">Что мы доставляем</h2>
+
+        <div class="delivery__board">
+          <ul class="delivery__list">
+            <li class="delivery-card delivery-card--orange delivery-card--1">
+              <div class="delivery-card__inner">
+                <img class="delivery-card__pattern" src="img/deliver-card.png" alt="">
+                <div class="delivery-card__content">
+                  <span class="delivery-card__tag">Электроника и техника</span>
+                  <h3 class="delivery-card__title">смартфоны, ноутбуки, аксессуары</h3>
+                </div>
+              </div>
+            </li>
+            <li class="delivery-card delivery-card--white delivery-card--2">
+              <div class="delivery-card__inner">
+                <div class="delivery-card__content">
+                  <span class="delivery-card__tag">Запчасти и комплектующие</span>
+                  <h3 class="delivery-card__title">автозапчасти, шины, техмодули</h3>
+                </div>
+              </div>
+            </li>
+            <li class="delivery-card delivery-card--blue delivery-card--3">
+              <div class="delivery-card__inner">
+                <img class="delivery-card__pattern" src="img/deliver-card.png" alt="">
+                <div class="delivery-card__content">
+                  <span class="delivery-card__tag">Одежда, обувь и косметика</span>
+                  <h3 class="delivery-card__title">одежда, обувь, текстиль, бьюти-продукты</h3>
+                </div>
+              </div>
+            </li>
+            <li class="delivery-card delivery-card--orange delivery-card--4">
+              <div class="delivery-card__inner">
+                <div class="delivery-card__content">
+                  <span class="delivery-card__tag">Медицинские и автотовары</span>
+                  <h3 class="delivery-card__title">медприборы, автоаксессуары</h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Отзывы ===== -->
+    <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="container reviews__inner">
+        <h2 class="section-title" id="reviews-title">Отзывы</h2>
+
+        <div class="reviews__slider js-slider">
+          <button class="reviews__arrow reviews__arrow--prev js-slider-prev" type="button" aria-label="Предыдущие отзывы">
+            <img src="img/icons/expand-left.svg" alt="" width="24" height="24">
+          </button>
+
+          <div class="reviews__viewport">
+            <ul class="reviews__track js-slider-track">
+              <li class="reviews__item">
+                <article class="review">
+                  <header class="review__author">
+                    <img class="review__avatar" src="img/review-1.png" alt="" width="58" height="58">
+                    <h3 class="review__name">Арман С. Алматы</h3>
+                  </header>
+                  <blockquote class="review__text">Привезли ноутбук из Дубая за 6 дней, всё чётко, с фото, трекингом и оповещениями. Очень доволен! Привезли ноутбук из Дубая за 6 дней, всё чётко, с фото, трекингом и оповещениями. Очень доволен!</blockquote>
+                </article>
+              </li>
+              <li class="reviews__item">
+                <article class="review">
+                  <header class="review__author">
+                    <img class="review__avatar" src="img/review-2.png" alt="" width="58" height="58">
+                    <h3 class="review__name">Асель Б., директор ТОО</h3>
+                  </header>
+                  <blockquote class="review__text">Работаем по ВЭД с компанией больше года. Надежные партнёры по логистике, всё по договору. Очень ценим стабильность и прозрачность в этом партнёрстве.</blockquote>
+                </article>
+              </li>
+              <li class="reviews__item">
+                <article class="review">
+                  <header class="review__author">
+                    <img class="review__avatar" src="img/review-3.png" alt="" width="58" height="58">
+                    <h3 class="review__name">Арман С. Алматы</h3>
+                  </header>
+                  <blockquote class="review__text">Привезли ноутбук из Дубая за 6 дней, всё чётко, с фото, трекингом и оповещениями. Очень доволен! Привезли ноутбук из Дубая за 6 дней, всё чётко, с фото, трекингом и оповещениями. Очень доволен!</blockquote>
+                </article>
+              </li>
+              <li class="reviews__item">
+                <article class="review">
+                  <header class="review__author">
+                    <img class="review__avatar" src="img/review-2.png" alt="" width="58" height="58">
+                    <h3 class="review__name">Асель Б., директор ТОО</h3>
+                  </header>
+                  <blockquote class="review__text">Работаем по ВЭД с компанией больше года. Надежные партнёры по логистике, всё по договору. Очень ценим стабильность и прозрачность в этом партнёрстве.</blockquote>
+                </article>
+              </li>
+              <li class="reviews__item">
+                <article class="review">
+                  <header class="review__author">
+                    <img class="review__avatar" src="img/review-3.png" alt="" width="58" height="58">
+                    <h3 class="review__name">Арман С. Алматы</h3>
+                  </header>
+                  <blockquote class="review__text">Привезли ноутбук из Дубая за 6 дней, всё чётко, с фото, трекингом и оповещениями. Очень доволен! Привезли ноутбук из Дубая за 6 дней, всё чётко, с фото, трекингом и оповещениями. Очень доволен!</blockquote>
+                </article>
+              </li>
+              <li class="reviews__item">
+                <article class="review">
+                  <header class="review__author">
+                    <img class="review__avatar" src="img/review-2.png" alt="" width="58" height="58">
+                    <h3 class="review__name">Асель Б., директор ТОО</h3>
+                  </header>
+                  <blockquote class="review__text">Работаем по ВЭД с компанией больше года. Надежные партнёры по логистике, всё по договору. Очень ценим стабильность и прозрачность в этом партнёрстве.</blockquote>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <button class="reviews__arrow reviews__arrow--next js-slider-next" type="button" aria-label="Следующие отзывы">
+            <img src="img/icons/expand-left.svg" alt="" width="24" height="24">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Заявка ===== -->
+    <section class="request" id="request" aria-labelledby="request-title">
+      <div class="request__bg" aria-hidden="true">
+        <img src="img/request-bg.png" alt="">
+      </div>
+
+      <div class="container request__inner">
+        <div class="request__heading">
+          <h2 class="section-title" id="request-title">Оставить заявку</h2>
+          <p class="request__subtitle">Заполните форму — и мы свяжемся с вами<br>в ближайшее время</p>
+        </div>
+
+        <form class="request-form js-request-form" action="#" method="post" novalidate>
+          <div class="request-form__fields">
+            <div class="request-form__field">
+              <label class="visually-hidden" for="request-name">Имя</label>
+              <input class="request-form__input" id="request-name" name="name" type="text" placeholder="Имя" autocomplete="name" required>
+            </div>
+            <div class="request-form__field">
+              <label class="visually-hidden" for="request-phone">Ваш телефон</label>
+              <input class="request-form__input" id="request-phone" name="phone" type="tel" placeholder="Ваш телефон" autocomplete="tel" required>
+            </div>
+            <div class="request-form__field">
+              <label class="visually-hidden" for="request-weight">Вес груза (кг)</label>
+              <input class="request-form__input" id="request-weight" name="weight" type="number" min="0" step="0.1" placeholder="Вес груза (кг)" inputmode="decimal">
+            </div>
+            <button class="btn btn--primary btn--form" type="submit">Отправить заявку</button>
+          </div>
+
+          <p class="request-form__status" role="status" aria-live="polite"></p>
+          <p class="request-form__consent">
+            Нажимая на “Отправить заявку”, соглашаюсь с условиями
+            <a href="#">Политики обработки персональных данных</a>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Контакты ===== -->
+    <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+        <h2 class="section-title" id="contacts-title">Контакты</h2>
+
+        <div class="contacts__map">
+          <img src="img/map.png" alt="Карта: офис JetBridge в Дубае">
+        </div>
+
+        <div class="contacts__grid">
+          <div class="contacts__col contacts__col--office">
+            <address class="contacts__item">
+              <h3 class="contacts__label">Адрес офиса</h3>
+              <p class="contacts__value">Дубай, UAE</p>
+            </address>
+            <div class="contacts__item">
+              <h3 class="contacts__label">Телефон</h3>
+              <p class="contacts__value"><a href="tel:+77777777777">+7 777 777 77 77</a></p>
+            </div>
+          </div>
+
+          <div class="contacts__col">
+            <div class="contacts__item">
+              <h3 class="contacts__label">Email</h3>
+              <p class="contacts__value"><a href="mailto:info@mediapeace.com">info@mediapeace.com</a></p>
+            </div>
+            <div class="contacts__item">
+              <h3 class="contacts__label">Мессенджеры и социальные сети</h3>
+              <img class="contacts__socials" src="img/icons/messengers.svg" alt="LinkedIn, Instagram, TikTok" width="144" height="36">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__grid">
+
+        <div class="site-footer__col site-footer__col--brand">
+          <a class="logo logo--small" href="#hero" aria-label="JetBridge — наверх">
+            <img class="logo__img" src="img/logo.png" alt="JetBridge">
+          </a>
+          <address class="site-footer__item">
+            <h2 class="site-footer__label">Адрес офиса</h2>
+            <p>Дубай, UAE</p>
+          </address>
+        </div>
+
+        <nav class="site-footer__col site-footer__nav" aria-label="Навигация по сайту">
+          <ul class="site-footer__links">
+            <li><a href="#about">О компании</a></li>
+            <li><a href="#stages">Этапы</a></li>
+            <li><a href="#advantages">Приемущества</a></li>
+            <li><a href="#tariffs">Тарифы</a></li>
+            <li><a href="#delivery">Что доставляем</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col site-footer__col--contacts">
+          <div class="site-footer__item">
+            <h2 class="site-footer__label">Телефон</h2>
+            <p><a href="tel:+77777777777">+7 777 777 77 77</a></p>
+          </div>
+          <div class="site-footer__item">
+            <h2 class="site-footer__label">Email</h2>
+            <p><a href="mailto:info@mediapeace.com">info@mediapeace.com</a></p>
+          </div>
+          <img class="site-footer__socials" src="img/icons/messengers.svg" alt="LinkedIn, Instagram, TikTok" width="144" height="36">
+        </div>
+
+        <div class="site-footer__col site-footer__col--callback">
+          <h2 class="site-footer__callback-title">Ответим на все ваши вопросы</h2>
+          <form class="callback-form js-callback-form" action="#" method="post" novalidate>
+            <label class="visually-hidden" for="callback-phone">Телефон</label>
+            <input class="callback-form__input" id="callback-phone" name="phone" type="tel" placeholder="Телефон" autocomplete="tel" required>
+            <button class="btn btn--gradient callback-form__btn" type="submit">Отправить</button>
+          </form>
+          <p class="callback-form__status" role="status" aria-live="polite"></p>
+          <p class="site-footer__consent">
+            Нажимая на кнопку, вы соглашаетесь с условиями
+            <a href="#">Политики конфиденциальности</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>Made by Media Peace 2025</p>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/modules/menu.js"></script>
+  <script src="js/modules/scroll.js"></script>
+  <script src="js/modules/slider.js"></script>
+  <script src="js/modules/form.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

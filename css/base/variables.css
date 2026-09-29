@@ -1,0 +1,31 @@
+:root {
+  /* Цвета (из стилей Figma) */
+  --color-blue: #03467c;
+  --color-blue-light: #0580e2;
+  --color-orange: #f97014;
+  --color-yellow: #f9bc14;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-placeholder: rgba(18, 18, 18, 0.5);
+  --color-nav-border: #fff1c6;
+
+  --gradient-accent: linear-gradient(to right, var(--color-orange), var(--color-yellow));
+  --gradient-blue: linear-gradient(to bottom, var(--color-blue), var(--color-blue-light));
+
+  /* Типографика */
+  --font-main: "Involve", "Montserrat", Arial, sans-serif;
+  --font-nav: "Montserrat", Arial, sans-serif;
+
+  /* Тени */
+  --shadow-text: 0 4px 20px rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 4px 25px rgba(0, 0, 0, 0.1);
+
+  /* Сетка */
+  --container-width: 1280px;
+  --page-width: 1440px;
+
+  /* Радиусы */
+  --radius-s: 10px;
+  --radius-m: 20px;
+  --radius-l: 30px;
+}

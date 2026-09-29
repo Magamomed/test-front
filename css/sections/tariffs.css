@@ -1,0 +1,131 @@
+.tariffs {
+  position: relative;
+  height: 803px; /* до начала секции «Этапы»; облака чуть заходят на неё */
+  margin-top: 80px;
+}
+
+.tariffs__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tariffs__inner .section-title {
+  white-space: nowrap;
+}
+
+/* Облака: анкерятся к краям экрана */
+.tariffs__cloud {
+  position: absolute;
+  max-width: none;
+  pointer-events: none;
+}
+
+.tariffs__cloud--left-big {
+  top: 369px;
+  left: 0;
+  width: 507px;
+  height: 466px;
+}
+
+.tariffs__cloud--right-big {
+  top: 369px;
+  right: 0;
+  width: 576px;
+  height: 457px;
+  transform: scaleX(-1);
+}
+
+.tariffs__cloud--left-small {
+  top: 261px;
+  left: 0;
+  width: 188px;
+  height: 481px;
+}
+
+.tariffs__cloud--right-small {
+  top: 273px;
+  right: 0;
+  width: 194px;
+  height: 428px;
+  transform: scaleX(-1);
+}
+
+.tariffs__list {
+  display: flex;
+  gap: 20px;
+}
+
+.tariff {
+  position: relative;
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-width: 0;
+  padding: 50px 30px;
+  border-radius: var(--radius-l);
+  background-color: var(--color-yellow);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
+  color: var(--color-white);
+}
+
+.tariff--orange {
+  background-image:
+    linear-gradient(179.94deg, rgba(249, 112, 20, 0.1) 0%, rgb(249, 150, 20) 81.03%),
+    url("../../img/tariff-orange.png");
+}
+
+.tariff--blue {
+  background-image:
+    linear-gradient(179.94deg, rgba(3, 70, 124, 0.1) 0%, rgb(3, 70, 124) 81.03%),
+    url("../../img/tariff-blue.png");
+}
+
+.tariff__title {
+  width: 347px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.64px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tariff__body {
+  width: 367px;
+  margin-top: -4px; /* заголовок и текст ближе друг к другу (16px), чем остальные блоки (20px) */
+}
+
+.tariff__body > p + *,
+.tariff__body > ul + * {
+  margin-top: 20px;
+}
+
+.tariff__features > li {
+  margin-bottom: 10px;
+}
+
+.tariff__features > li:last-child {
+  margin-bottom: 0;
+}
+
+/* у первой карточки маркеры списка, у остальных — символ «•» */
+.tariff__features--list {
+  list-style: disc;
+  padding-left: 24px;
+}
+
+.tariff__features:not(.tariff__features--list) > li::before {
+  content: "• ";
+}
+
+.tariff__icon {
+  width: 116px;
+  height: 116px;
+  margin-top: auto;
+}

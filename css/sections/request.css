@@ -1,0 +1,111 @@
+.request {
+  position: relative;
+  height: 668px;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+.request__bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #0a7fc6, #8ec5e6);
+}
+
+/* В макете самолёт повёрнут (~22° против часовой), Figma отдаёт файл без поворота */
+.request__bg img {
+  position: absolute;
+  top: -126px;
+  left: calc(50% - 720px + 118px);
+  width: 1400px;
+  max-width: none;
+  height: 991px;
+  transform: rotate(-21.8deg);
+}
+
+.request__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180.04deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0.1) 42.56%,
+    rgba(251, 161, 100, 0) 85.828%,
+    rgba(249, 112, 20, 0) 108.29%
+  );
+}
+
+.request__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 55px;
+}
+
+.request__heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.request__subtitle {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  color: var(--color-blue);
+}
+
+.request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  width: 630px;
+}
+
+.request-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.request-form__input {
+  width: 100%;
+  height: 60px;
+  padding: 17px 30px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-m);
+  background: var(--color-white);
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-black);
+}
+
+.request-form__input::placeholder {
+  color: var(--color-placeholder);
+}
+
+.request-form__input:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 2px;
+}
+
+.request-form__input.is-invalid {
+  border-color: #d93025;
+}
+
+.request-form__status {
+  min-height: 1.2em;
+  color: var(--color-white);
+  text-shadow: var(--shadow-text);
+}
+
+.request-form__consent {
+  color: var(--color-white);
+}
+
+.request-form__consent a {
+  text-decoration: underline;
+}

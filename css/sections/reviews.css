@@ -1,0 +1,111 @@
+.reviews {
+  margin-top: 80px;
+}
+
+.reviews__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.reviews__slider {
+  position: relative;
+}
+
+/* окно на 4 карточки; полоса из 6 карточек сдвигается по кнопкам */
+.reviews__viewport {
+  overflow: hidden;
+  /* поля под тень карточек; справа меньше 20px, чтобы не «подглядывала» 5-я карточка */
+  padding: 30px 12px 30px 24px;
+  margin: -30px -12px -30px -24px;
+}
+
+.reviews__track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease;
+}
+
+.reviews__item {
+  display: flex;
+  flex: 0 0 305px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  padding: 20px;
+  border-radius: var(--radius-m);
+  background: var(--color-white);
+  filter: drop-shadow(-4px 4px 15px rgba(0, 0, 0, 0.25));
+}
+
+.review__author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.review__avatar {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review__name {
+  width: 146px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+}
+
+.review__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.32px;
+}
+
+.reviews__arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-m);
+  background: var(--color-blue);
+  box-shadow: var(--shadow-card);
+  transition: opacity 0.2s;
+}
+
+.reviews__arrow--prev {
+  left: -31px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.reviews__arrow--next {
+  right: -20px;
+  transform: translateY(-50%);
+}
+
+/* одна иконка для обеих стрелок: «вперёд» — повёрнутая на 180° */
+.reviews__arrow--next img {
+  transform: rotate(180deg);
+}
+
+.reviews__arrow:disabled {
+  opacity: 0.4;
+  cursor: default;
+}

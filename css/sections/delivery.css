@@ -1,0 +1,128 @@
+.delivery {
+  margin-top: 83px;
+}
+
+.delivery__board {
+  position: relative;
+  height: 709px;
+  margin-top: 20px;
+}
+
+.delivery__board::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 512px;
+  border-radius: var(--radius-l);
+  background: url("../../img/deliver-bg.png") center / cover no-repeat;
+}
+
+/* Карточки налезают друг на друга и на фото, слегка повёрнуты */
+.delivery__list {
+  position: absolute;
+  top: 402px;
+  left: 0;
+  width: 100%;
+}
+
+.delivery-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 440px;
+  height: 303px;
+}
+
+.delivery-card--1 {
+  top: 0;
+  left: 7px;
+  transform: rotate(1.44deg);
+}
+
+.delivery-card--2 {
+  top: 4px;
+  left: 323px;
+  transform: rotate(-0.39deg);
+}
+
+.delivery-card--3 {
+  top: 4px;
+  left: 630px;
+  transform: rotate(1.44deg);
+}
+
+.delivery-card--4 {
+  top: 8px;
+  left: 953px;
+  transform: rotate(-0.39deg);
+}
+
+.delivery-card__inner {
+  position: relative;
+  width: 433px;
+  height: 292.6px;
+  border-radius: var(--radius-m);
+  box-shadow: 0 4px 15px rgba(63, 95, 45, 0.25);
+  color: var(--color-white);
+}
+
+.delivery-card--orange .delivery-card__inner {
+  background: var(--gradient-accent);
+}
+
+.delivery-card--blue .delivery-card__inner {
+  background: var(--color-blue);
+}
+
+.delivery-card--white .delivery-card__inner {
+  background: var(--color-white);
+  color: var(--color-blue);
+}
+
+.delivery-card__pattern {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 4px);
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.delivery-card__content {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 397px;
+  height: 234px;
+}
+
+.delivery-card__tag {
+  padding: 10px 20px;
+  border: 1px solid currentColor;
+  border-radius: var(--radius-s);
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.32px;
+}
+
+.delivery-card__title {
+  max-width: 290px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+}
+
+.delivery-card--4 .delivery-card__title {
+  font-weight: 600;
+  line-height: 1.2;
+}

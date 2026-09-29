@@ -1,0 +1,113 @@
+.hero {
+  position: relative;
+  height: 705px;
+  overflow: hidden;
+  color: var(--color-white);
+}
+
+/* Фото зеркально отражено, как в макете */
+.hero__photo {
+  position: absolute;
+  top: 0;
+  left: calc(50% + 0.72px);
+  width: max(100%, 1441.56px);
+  height: 705.76px;
+  overflow: hidden;
+  transform: translateX(-50%) scaleX(-1);
+}
+
+.hero__photo img {
+  position: absolute;
+  top: -7.65%;
+  left: -17.41%;
+  width: 117.41%;
+  max-width: none;
+  height: 119.59%;
+}
+
+.hero__tint {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    165.89deg,
+    rgb(102, 149, 186) 11.378%,
+    rgb(102, 149, 186) 15.304%,
+    rgba(102, 149, 186, 0.1) 61.939%
+  );
+}
+
+/* Белое затухание внизу (переход в следующую секцию) */
+.hero__fade {
+  position: absolute;
+  top: -175px;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1442 / 883;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 80.802%,
+    rgba(255, 255, 255, 0.7) 91.854%,
+    #fff 97.909%
+  );
+}
+
+.hero__glow {
+  position: absolute;
+  top: -80px;
+  left: -490px;
+  width: 1305px;
+  height: 737px;
+  max-width: none;
+}
+
+.hero__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 172px; /* 24 (шапка) + 88 + 60 */
+  padding-bottom: 108px;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+}
+
+.hero__brand {
+  display: block;
+  font-size: 70px;
+  letter-spacing: -1.4px;
+  color: var(--color-yellow);
+}
+
+.hero__brand-word {
+  text-transform: capitalize;
+}
+
+.hero__headline {
+  display: block;
+}
+
+.hero__lead {
+  width: 498px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  text-shadow: var(--shadow-text);
+}
+
+.hero__actions {
+  display: flex;
+  gap: 20px;
+}

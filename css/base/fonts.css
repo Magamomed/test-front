@@ -1,0 +1,28 @@
+/*
+  Involve — шрифт из макета (SIL Open Font License, лицензия лежит в /fonts/OFL.txt).
+  Источник: https://github.com/StefanPeev/Involve
+  Montserrat из Google Fonts остаётся запасным (см. --font-main) и используется в выпадающем меню.
+*/
+@font-face {
+  font-family: "Involve";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Involve-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Involve";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Involve-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Involve";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../../fonts/Involve-Bold.otf") format("opentype");
+}

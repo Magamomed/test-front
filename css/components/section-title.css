@@ -1,0 +1,8 @@
+.section-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.66px;
+  text-transform: uppercase;
+  color: var(--color-blue);
+}

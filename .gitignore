@@ -1,0 +1,13 @@
+# зависимости и служебные файлы разработки
+node_modules/
+package.json
+package-lock.json
+
+# личные настройки инструментов
+.mcp.json
+.claude/
+
+# ОС / редакторы
+.DS_Store
+Thumbs.db
+.vscode/

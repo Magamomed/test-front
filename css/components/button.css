@@ -1,0 +1,95 @@
+/* Кнопка: базовый блок + модификаторы вида (--primary, --gradient, --light) и размера (--md, --lg) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 50px;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-m);
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-white);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 3px;
+}
+
+/* вид */
+.btn--primary {
+  background: var(--color-blue);
+}
+
+.btn--gradient {
+  background: var(--gradient-accent);
+}
+
+.btn--outlined {
+  border-color: var(--color-orange);
+}
+
+.btn--light {
+  width: 288px;
+  padding-inline: 44px;
+  border-color: var(--color-blue);
+  border-radius: var(--radius-s);
+  background: var(--color-white);
+  color: var(--color-blue);
+}
+
+/* размер */
+.btn--md {
+  width: 305px;
+}
+
+.btn--lg {
+  width: 305px;
+  height: 60px;
+  padding: 10px 17px;
+}
+
+.btn--menu {
+  width: 197px;
+  padding: 10px 17px;
+}
+
+.btn--form {
+  width: 373px;
+}
+
+/* «Связаться с нами» со стрелкой в белом квадрате */
+.btn--cta {
+  justify-content: flex-end;
+  gap: 50px;
+  width: 326px;
+  height: 60px;
+  padding: 10px;
+  border-color: var(--color-orange);
+}
+
+.btn__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-s);
+  background: var(--color-white);
+}
